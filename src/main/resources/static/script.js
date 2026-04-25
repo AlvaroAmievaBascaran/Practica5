@@ -84,9 +84,7 @@ function pintarCarrito(carrito) {
     const subtotalResumen = document.getElementById("subtotal-resumen");
     const totalResumen = document.getElementById("total-resumen");
 
-    if (!tbody) {
-        return;
-    }
+    if (!tbody) return;
 
     tbody.innerHTML = "";
 
@@ -95,8 +93,13 @@ function pintarCarrito(carrito) {
         return;
     }
 
+    let total = 0;
+
     carrito.lineas.forEach(linea => {
         const producto = productos[linea.idArticulo];
+
+        const subtotal = linea.precioUnitario * linea.unidades;
+        total += subtotal;
 
         const fila = document.createElement("tr");
 
@@ -104,7 +107,7 @@ function pintarCarrito(carrito) {
       <td>${producto ? producto.nombre : "Producto " + linea.idArticulo}</td>
       <td>${linea.unidades}</td>
       <td>${linea.precioUnitario} €</td>
-      <td>${linea.costeLinea} €</td>
+      <td>${subtotal} €</td>
       <td>
         <button class="btn" onclick="borrarLinea(${linea.idArticulo})">
           Eliminar
@@ -115,9 +118,9 @@ function pintarCarrito(carrito) {
         tbody.appendChild(fila);
     });
 
-    totalTabla.textContent = carrito.totalPrecio + " €";
-    subtotalResumen.textContent = carrito.totalPrecio + " €";
-    totalResumen.textContent = carrito.totalPrecio + " €";
+    totalTabla.textContent = total + " €";
+    subtotalResumen.textContent = total + " €";
+    totalResumen.textContent = total + " €";
 }
 
 function mostrarCarritoVacio() {
