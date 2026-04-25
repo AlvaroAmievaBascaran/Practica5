@@ -1,11 +1,12 @@
 package edu.comillas.icai.gitt.pat.spring.Practica5.Controlador;
 
-import edu.comillas.icai.gitt.pat.spring.Practica3.Entidades.Carrito;
-import edu.comillas.icai.gitt.pat.spring.Practica3.Modelo.AddLineaRequest;
-import edu.comillas.icai.gitt.pat.spring.Practica3.Modelo.CrearCarritoRequest;
-import edu.comillas.icai.gitt.pat.spring.Practica3.Servicio.CarritoServicio;
+import edu.comillas.icai.gitt.pat.spring.Practica5.Entidades.Carrito;
+import edu.comillas.icai.gitt.pat.spring.Practica5.Modelo.AddLineaRequest;
+import edu.comillas.icai.gitt.pat.spring.Practica5.Modelo.CrearCarritoRequest;
+import edu.comillas.icai.gitt.pat.spring.Practica5.Servicio.CarritoServicio;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+
 
 @RestController
 @RequestMapping("/api/carrito")

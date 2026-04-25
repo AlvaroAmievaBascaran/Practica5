@@ -1,11 +1,11 @@
 package edu.comillas.icai.gitt.pat.spring.Practica5.Servicio;
 
-import edu.comillas.icai.gitt.pat.spring.Practica3.Entidades.Carrito;
-import edu.comillas.icai.gitt.pat.spring.Practica3.Entidades.LineaCarrito;
-import edu.comillas.icai.gitt.pat.spring.Practica3.Modelo.AddLineaRequest;
-import edu.comillas.icai.gitt.pat.spring.Practica3.Modelo.CrearCarritoRequest;
-import edu.comillas.icai.gitt.pat.spring.Practica3.Repositorio.CarritoRepositorio;
-import edu.comillas.icai.gitt.pat.spring.Practica3.Repositorio.LineaCarritoRepositorio;
+import edu.comillas.icai.gitt.pat.spring.Practica5.Entidades.Carrito;
+import edu.comillas.icai.gitt.pat.spring.Practica5.Entidades.LineaCarrito;
+import edu.comillas.icai.gitt.pat.spring.Practica5.Modelo.AddLineaRequest;
+import edu.comillas.icai.gitt.pat.spring.Practica5.Modelo.CrearCarritoRequest;
+import edu.comillas.icai.gitt.pat.spring.Practica5.Repositorio.CarritoRepositorio;
+import edu.comillas.icai.gitt.pat.spring.Practica5.Repositorio.LineaCarritoRepositorio;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

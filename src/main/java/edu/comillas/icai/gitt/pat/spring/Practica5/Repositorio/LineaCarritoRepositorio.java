@@ -1,6 +1,6 @@
 package edu.comillas.icai.gitt.pat.spring.Practica5.Repositorio;
 
-import edu.comillas.icai.gitt.pat.spring.Practica3.Entidades.LineaCarrito;
+import edu.comillas.icai.gitt.pat.spring.Practica5.Entidades.LineaCarrito;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
