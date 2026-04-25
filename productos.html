@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo de productos de surf: tablas, neoprenos y accesorios.">
+  <meta name="author" content="Álvaro">
+  <title>Wave Rider Shop | Productos</title>
+  <link rel="icon" href="Icono.jpeg" type="image/jpeg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <h1>Wave Rider Shop</h1>
+    <p class="subtitle">Catálogo de productos</p>
+
+    <nav aria-label="Menú principal">
+      <ul class="nav-list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html" class="active">Productos</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container section">
+  <section>
+    <h2>Nuestros productos estrella</h2>
+    <p>
+      En esta sección se muestran algunos artículos destacados de la tienda con imagen, descripción
+      y precio para simular un catálogo real.
+    </p>
+
+    <div class="cards-grid">
+      <article class="card product-card">
+        <img
+                src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=1000&q=80"
+                alt="Tabla de surf apoyada en la arena"
+        >
+        <h3>Tabla Softboard 7.0</h3>
+        <p>
+          Modelo recomendado para principiantes por su estabilidad y seguridad.
+        </p>
+        <p class="price">299 €</p>
+        <button class="btn" onclick="anadirProducto(1)">Añadir al carrito</button>
+      </article>
+
+      <article class="card product-card">
+        <img
+                src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1000&q=80"
+                alt="Surfista con neopreno en la playa"
+        >
+        <h3>Neopreno Pro 4/3 mm</h3>
+        <p>
+          Diseñado para aportar comodidad, abrigo y libertad de movimiento.
+        </p>
+        <p class="price">189 €</p>
+        <button class="btn" onclick="anadirProducto(2)">Añadir al carrito</button>
+      </article>
+
+      <article class="card product-card">
+        <img
+                src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1000&q=80"
+                alt="Accesorios de surf colocados en una tienda"
+        >
+        <h3>Pack accesorios</h3>
+        <p>
+          Incluye invento, parafina y funda básica para completar tu equipo.
+        </p>
+        <p class="price">49 €</p>
+        <button class="btn" onclick="anadirProducto(3)">Añadir al carrito</button>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Tabla comparativa</h2>
+    <p>
+      Esta tabla ayuda a comparar algunos productos según su categoría, nivel recomendado y precio.
+    </p>
+
+    <div class="table-wrapper">
+      <table>
+        <caption>Comparativa de productos de surf</caption>
+        <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Categoría</th>
+          <th>Nivel recomendado</th>
+          <th>Precio</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Softboard 7.0</td>
+          <td>Tabla</td>
+          <td>Principiante</td>
+          <td>299 €</td>
+        </tr>
+        <tr>
+          <td>Shortboard X</td>
+          <td>Tabla</td>
+          <td>Avanzado</td>
+          <td>420 €</td>
+        </tr>
+        <tr>
+          <td>Neopreno Pro 4/3</td>
+          <td>Neopreno</td>
+          <td>Todos</td>
+          <td>189 €</td>
+        </tr>
+        <tr>
+          <td>Pack accesorios</td>
+          <td>Accesorios</td>
+          <td>Todos</td>
+          <td>49 €</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Consejo de compra</h2>
+    <article class="card">
+      <p>
+        Si estás empezando, conviene elegir una tabla estable y con mayor volumen. Si ya tienes
+        experiencia, puedes optar por modelos más maniobrables. Elegir bien el material mejora mucho
+        la experiencia en el agua.
+      </p>
+    </article>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <p>&copy; 2026 Wave Rider Shop. Práctica de HTML y CSS.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="carrito.html">Carrito</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

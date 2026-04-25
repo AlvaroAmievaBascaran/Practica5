@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Carrito de compra de la tienda de surf.">
+  <meta name="author" content="Álvaro">
+  <title>Wave Rider Shop | Carrito</title>
+  <link rel="icon" href="Icono.jpeg" type="image/jpeg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <h1>Wave Rider Shop</h1>
+    <p class="subtitle">Resumen de tu compra</p>
+
+    <nav aria-label="Menú principal">
+      <ul class="nav-list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="carrito.html" class="active">Carrito</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container section">
+  <section>
+    <h2>Carrito de compra</h2>
+    <p>
+      Esta página muestra el carrito del usuario consumiendo los datos reales de la API REST.
+    </p>
+
+    <div class="table-wrapper">
+      <table>
+        <caption>Resumen del carrito</caption>
+        <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Cantidad</th>
+          <th>Precio unitario</th>
+          <th>Subtotal</th>
+          <th>Acción</th>
+        </tr>
+        </thead>
+
+        <tbody id="carrito-body">
+        </tbody>
+
+        <tfoot>
+        <tr>
+          <th colspan="3">Total</th>
+          <th id="total-tabla">0 €</th>
+          <th></th>
+        </tr>
+        </tfoot>
+      </table>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="cards-grid">
+      <article class="card">
+        <h3>Envío</h3>
+        <p>Entrega estimada en 48/72 horas para pedidos nacionales.</p>
+      </article>
+
+      <article class="card">
+        <h3>Pago</h3>
+        <p>Pago disponible con tarjeta, transferencia o PayPal.</p>
+      </article>
+
+      <article class="card">
+        <h3>Devoluciones</h3>
+        <p>Dispones de 14 días para solicitar la devolución del producto.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <article class="card">
+      <h2>Resumen de pago</h2>
+      <p><strong>Subtotal:</strong> <span id="subtotal-resumen">0 €</span></p>
+      <p><strong>Gastos de envío:</strong> Gratis</p>
+      <p><strong>Total final:</strong> <span id="total-resumen">0 €</span></p>
+
+      <button class="btn" onclick="borrarCarrito()">Vaciar carrito</button>
+      <a class="btn" href="contacto.html">Finalizar compra</a>
+    </article>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <p>&copy; 2026 Wave Rider Shop. Práctica de HTML y CSS.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="carrito.html">Carrito</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulario de contacto de Wave Rider Shop.">
+  <meta name="author" content="Álvaro">
+  <title>Wave Rider Shop | Contacto</title>
+  <link rel="icon" href="Icono.jpeg" type="image/jpeg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <h1>Wave Rider Shop</h1>
+    <p class="subtitle">Contacto y atención al cliente</p>
+
+    <nav aria-label="Menú principal">
+      <ul class="nav-list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container section">
+  <section>
+    <h2>Formulario de contacto</h2>
+    <p>
+      Completa este formulario para pedir información, resolver dudas o solicitar asesoramiento.
+    </p>
+
+    <form class="contact-form" action="#" method="post">
+      <fieldset>
+        <legend>Datos personales</legend>
+
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" maxlength="60" required>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="600123123" maxlength="15">
+      </fieldset>
+
+      <fieldset>
+        <legend>Tu consulta</legend>
+
+        <label for="asunto">Asunto</label>
+        <input type="text" id="asunto" name="asunto" placeholder="Ej. Consulta sobre tablas" maxlength="60" required>
+
+        <label for="producto">Producto de interés</label>
+        <select id="producto" name="producto">
+          <option value="">Selecciona una opción</option>
+          <option value="tabla">Tabla de surf</option>
+          <option value="neopreno">Neopreno</option>
+          <option value="accesorios">Accesorios</option>
+        </select>
+
+        <label for="nivel">Nivel de surf</label>
+        <select id="nivel" name="nivel">
+          <option value="principiante">Principiante</option>
+          <option value="intermedio">Intermedio</option>
+          <option value="avanzado">Avanzado</option>
+        </select>
+
+        <p class="radio-title">¿Deseas recibir ofertas?</p>
+        <div class="inline-options">
+          <label><input type="radio" name="ofertas" value="si" checked> Sí</label>
+          <label><input type="radio" name="ofertas" value="no"> No</label>
+        </div>
+
+        <label class="checkbox-label">
+          <input type="checkbox" name="condiciones" required>
+          Acepto la política de privacidad y las condiciones de uso
+        </label>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="6" maxlength="500" placeholder="Escribe aquí tu consulta..." required></textarea>
+      </fieldset>
+
+      <button type="submit" class="btn">Enviar formulario</button>
+    </form>
+  </section>
+
+  <section class="section">
+    <h2>Información adicional</h2>
+    <article class="card">
+      <p><strong>Dirección:</strong> Avenida del Mar, 16, Ribadesella</p>
+      <p><strong>Teléfono:</strong> 683 187 598</p>
+      <p><strong>Email:</strong> info@waveridershop.com</p>
+    </article>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <p>&copy; 2026 Wave Rider Shop. Práctica de HTML y CSS.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="carrito.html">Carrito</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
